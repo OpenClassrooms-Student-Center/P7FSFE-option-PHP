@@ -2,7 +2,7 @@
 
 ## Comment utiliser ce modèle
 
-Ce journal est le document que vous remettrez à Inès Favreau, CTO de Kasa, pour rendre compte de la maintenance de la plateforme kasa-app (Next.js, React, API Node.js). Il ne s'agit pas d'une liste de bugs corrigés, mais d'un journal de bord : pour chaque intervention, on doit pouvoir lire comment le problème a été constaté, comment il a été diagnostiqué et avec quel outil, ce qui a été audité dans le code, ce qui a été refactorisé et pourquoi, et comment la correction a été vérifiée.
+Ce journal est le document que vous remettrez à Inès Favreau, CTO de Kasa, pour rendre compte de la maintenance de la plateforme kasa-app (interface React et API Symfony). Il ne s'agit pas d'une liste de bugs corrigés, mais d'un journal de bord : pour chaque intervention, on doit pouvoir lire comment le problème a été constaté, comment il a été diagnostiqué et avec quel outil, ce qui a été audité dans le code, ce qui a été refactorisé et pourquoi, et comment la correction a été vérifiée.
 
 Règles de remplissage :
 
