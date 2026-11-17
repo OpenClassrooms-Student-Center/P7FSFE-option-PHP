@@ -9,7 +9,7 @@ Application web de Kasa : les voyageurs consultent les logements proposés par d
 | PHP | 8.5.11, avec les extensions `ctype`, `iconv` et `mbstring` | `php --version` |
 | Composer | 2.8 ou supérieure | `composer --version` |
 | Symfony CLI (facultatif, pour `symfony server:start`) | 5.x | `symfony version` |
-| Node.js | 24.21.0 | `node --version` |
+| Node.js | 24.x | `node --version` |
 | npm | 11.x (livré avec Node.js 24) | `npm --version` |
 | Git | 2.40 ou supérieure | `git --version` |
 
@@ -94,7 +94,7 @@ npm run dev
 1. `http://localhost:8000/api/sante` répond `{"statut":"ok"}`.
 2. `http://localhost:5173` affiche les 12 logements du fichier de données, avec leur ville, leur type et leur prix par nuit.
 3. Chaque logement a sa page de détail : titre, type, ville, prix par nuit et prénom de l'hôte.
-4. La page `/connexion` accepte les comptes de démonstration du fichier de données (par exemple le voyageur `julien.morand@exemple-kasa.fr` / `azerty123`). Une fois connecté, l'en-tête affiche le prénom de l'utilisateur et un bouton de déconnexion.
+4. La page `/connexion` accepte les comptes fictifs présents dans le CSV. Une fois connecté, l'en-tête affiche le prénom de l'utilisateur et un bouton de déconnexion. Consultez les identifiants uniquement dans l'environnement local ; ne les recopiez pas dans vos livrables.
 
 ### Construction de l'interface pour la production
 
@@ -117,7 +117,7 @@ Pour l'API, définissez `APP_ENV=prod` et un `APP_SECRET` dans `backend/.env.loc
 | --- | --- |
 | Exécution serveur | PHP 8.5.11 |
 | API | Symfony 7.4 (FrameworkBundle, Console, Dotenv, Runtime, Yaml), NelmioCorsBundle |
-| Exécution de l'outillage front | Node.js 24.21.0 |
+| Exécution de l'outillage front | Node.js 24.x |
 | Interface | React 19.3.0, React Router 7, TypeScript en mode strict, Vite 7 |
 | Qualité | PHPStan (niveau 6) et PHP-CS-Fixer (PSR-12 / Symfony) côté API ; ESLint 9 et Prettier 3 côté interface |
 | Outillage | Composer pour l'API, npm pour l'interface |
