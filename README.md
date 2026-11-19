@@ -1,4 +1,4 @@
-# kasa-app — plateforme de réservation de logements entre particuliers
+# Kasa
 
 Application web de Kasa : les voyageurs consultent les logements proposés par des hôtes particuliers et se connectent à leur compte. Le dépôt regroupe deux applications qui ne partagent qu'un contrat HTTP (routes, JSON, codes de réponse) : l'interface React construite avec Vite (`frontend/`) et l'API Symfony qui l'alimente (`backend/`). L'API ne rend pas de HTML, l'interface ne lit pas les données directement.
 
@@ -24,7 +24,7 @@ git clone https://github.com/OpenClassrooms-Student-Center/Starter-P7-option-PHP
 cd kasa-app
 ```
 
-### API — `backend/`
+### API `backend/`
 
 ```bash
 cd backend
@@ -33,7 +33,7 @@ composer install
 
 Les valeurs par défaut de `backend/.env` suffisent pour un lancement en local. Pour les surcharger, créez un fichier `backend/.env.local` (ignoré par Git) ; ne modifiez pas `.env`, qui est versionné.
 
-### Interface — `frontend/`
+### Interface `frontend/`
 
 ```bash
 cd frontend
@@ -48,7 +48,7 @@ Les valeurs du fichier d'exemple suffisent pour un lancement en local.
 
 Les fichiers `.env.local` sont ignorés par Git. Côté API, `backend/.env` est versionné et ne contient que des valeurs par défaut non secrètes (convention Symfony) ; côté interface, seul `frontend/.env.example` est versionné.
 
-### API — `backend/.env`, surcharge dans `backend/.env.local`
+### API `backend/.env`, surcharge dans `backend/.env.local`
 
 | Variable | Valeur par défaut | Rôle |
 | --- | --- | --- |
@@ -58,7 +58,7 @@ Les fichiers `.env.local` sont ignorés par Git. Côté API, `backend/.env` est 
 | `CORS_ALLOW_ORIGIN` | `^https?://localhost:5173$` | Origine autorisée pour l'interface (expression régulière) |
 | `JWT_SECRET`, `JWT_EXPIRES_IN`, `BCRYPT_ROUNDS`, `OAUTH_CLIENT_ID`, `OAUTH_CLIENT_SECRET` | — | Réservées à une évolution de l'API ; non lues par le code actuel |
 
-### Interface — `frontend/.env.local`
+### Interface `frontend/.env.local`
 
 | Variable | Valeur par défaut | Rôle |
 | --- | --- | --- |
